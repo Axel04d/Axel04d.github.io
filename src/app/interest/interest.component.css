@@ -1,0 +1,53 @@
+.interests-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .interests-container h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    color: #004d40; 
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
+  
+  .interests-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 15px; 
+  }
+  
+  .interest-item {
+    background-color: #4db6ac; 
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .interest-item:hover {
+    background-color: #00796b; 
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .interests-grid {
+      grid-template-columns: repeat(2, 1fr); 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .interests-grid {
+      grid-template-columns: 1fr; 
+    }
+  }
+  
