@@ -1,0 +1,35 @@
+.languages-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px #93f8ba;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.languages-container h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    color: #000000;
+    margin-bottom: 25px;
+}
+
+.languages-list {
+    list-style: none;
+    padding: 0;
+}
+
+.languages-list li {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    color: #4a5568;
+    padding: 10px 0;
+    border-bottom: 1px solid #cbd5e0;
+}
+
+.languages-list li:hover {
+    color: #34d399;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}

@@ -1,33 +1,20 @@
 <h3>Educación</h3>
 
-<table border="0">
-  <tbody>
-
-    <tr *ngFor="let education of Education">
-      <td>{{ education.fecha }}</td>
-      <td>{{ education.ubicacion }}</td>
-    </tr>
-    <tr *ngFor="let education of Education">
-      <td>{{ education.puesto }}</td>
-      <td></td>
-    </tr>
-    <tr *ngFor="let education of Education">
-      <td>{{ education.empresa }}</td>
-      <td></td>
-    </tr>
-    <tr *ngFor="let education of Education">
-      <td>Logros:</td>
-      <td></td>
-    </tr>
-    
-    <tr *ngFor="let education of Education">
-      <td colspan="2">
-        <ul>
-          <li *ngFor="let logro of education.logros">
-            {{ logro.descripcion }}
-          </li>
-        </ul>
-      </td>
-    </tr>
-  </tbody>
-</table>
+<div class="education-card" *ngFor="let education of Education">
+  <div class="education-header">
+    <span class="education-date">{{ education.fecha }}</span>
+    <span class="education-location">{{ education.ubicacion }}</span>
+  </div>
+  
+  <div class="education-details">
+    <h4>{{ education.puesto }}</h4>
+    <p class="education-company">{{ education.empresa }}</p>
+  </div>
+  
+  <div class="education-achievements">
+    <h5>Logros:</h5>
+    <ul>
+      <li *ngFor="let logro of education.logros">{{ logro.descripcion }}</li>
+    </ul>
+  </div>
+</div>
