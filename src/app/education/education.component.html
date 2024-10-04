@@ -1,0 +1,20 @@
+<h3>Educación</h3>
+
+<div class="education-card" *ngFor="let education of Education">
+  <div class="education-header">
+    <span class="education-date">{{ education.fecha }}</span>
+    <span class="education-location">{{ education.ubicacion }}</span>
+  </div>
+  
+  <div class="education-details">
+    <h4>{{ education.puesto }}</h4>
+    <p class="education-company">{{ education.empresa }}</p>
+  </div>
+  
+  <div class="education-achievements">
+    <h5>Logros:</h5>
+    <ul>
+      <li *ngFor="let logro of education.logros">{{ logro.descripcion }}</li>
+    </ul>
+  </div>
+</div>
