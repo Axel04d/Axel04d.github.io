@@ -1,0 +1,73 @@
+h3 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #004d40; 
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 3px solid #4db6ac; 
+  padding-bottom: 10px;
+}
+
+.education-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); 
+  margin-bottom: 20px;
+  padding: 20px;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.education-card:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.education-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.education-date, .education-location {
+  font-size: 0.9em;
+  color: #00695c; 
+}
+
+.education-details h4 {
+  font-size: 1.4em;
+  color: #00796b; 
+  margin-bottom: 5px;
+}
+
+.education-company {
+  font-size: 1.1em;
+  color: #004d40; 
+  font-weight: bold;
+}
+
+.education-achievements h5 {
+  margin-top: 15px;
+  font-size: 1.2em;
+  color: #00796b; 
+}
+
+.education-achievements ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.education-achievements li {
+  font-size: 1em;
+  color: #004d40; 
+  margin-bottom: 8px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.education-card ul li:hover {
+  color: #009688; 
+  transition: color 0.2s ease;
+}
